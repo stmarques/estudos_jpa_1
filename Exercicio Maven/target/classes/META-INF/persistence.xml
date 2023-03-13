@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="exercicio_maven" transaction-type="RESOURCE_LOCAL">
+	
+	<properties>	
+		<!-- Propriedades da implementação hibernate (produto/tecnologia = Ex.: empresa) -->		
+		<property name="hibernate.show_sql" value="true"/>
+		<property name="hibernate.hbm2ddl.auto" value="create"/>
+		<property name="hibernate.format.sql" value="true"/>
+		<property name="hibernate.dialect" value="org.hibernate.dialect.Oracle12cDialect"/>
+		<!-- Propriedades da especificação JPA (padrão do Java para ORM = Ex.: governo) -->
+		<property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+		<property name="javax.persistence.jdbc.user" value="RM94606"/>
+		<property name="javax.persistence.jdbc.password" value="220796"/>
+		<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@oracle.fiap.com.br:1521:orcl"/>		
+	</properties>	
+	
+	</persistence-unit>	
+</persistence>
